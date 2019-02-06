@@ -26,7 +26,7 @@ from cyclicLR import CyclicCosAnnealingLR
 import torch
 
 optimizer = torch.optim.SGD(lr=1e-3)
-scheduler = CyclicCosAnnealingLR(optimizer,milestones=[30,80],eta_min=1e-6)
+scheduler = CyclicCosAnnealingLR(optimizer,milestones=[10,25,60,80,120,180,240,320,400,480],decay_milestones=[60, 120, 240, 480, 960],eta_min=1e-6)
 for epoch in range(100):
   scheduler.step()
   train(..)
