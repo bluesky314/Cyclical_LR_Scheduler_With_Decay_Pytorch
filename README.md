@@ -19,6 +19,8 @@ Cyclic learning rate schedules -
 ### Reference
 <a href= https://arxiv.org/pdf/1608.03983.pdf> *SGDR: Stochastic Gradient Descent with Warm Restarts* </a>
 
+"
+
 ### Usage
 Sample - (follow similarly for CyclicLinearLR)
 ```
@@ -42,4 +44,3 @@ Cyclic Cosine Annealing Learning Rate Schedule
 
 
 
-"
