@@ -37,6 +37,7 @@ for epoch in range(100):
 
 ### Visualization
 Cyclic Cosine Annealing Learning Rate Schedule
+
 ![Cosine LR](https://github.com/bluesky314/Cyclical_LR_Scheduler_With_Decay_Pytorch/blob/master/cyc.png)
 
 
