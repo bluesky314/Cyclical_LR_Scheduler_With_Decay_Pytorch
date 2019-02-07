@@ -25,6 +25,7 @@ class CyclicCosAnnealingLR(_LRScheduler):
         optimizer (Optimizer): Wrapped optimizer.
         milestones (list of ints): List of epoch indices. Must be increasing.
         decay_milestones(list of ints):List of increasing epoch indices. Ideally,decay values should overlap with milestone points
+        gamma (float): factor by which to decay the max learning rate at each decay milestone
         eta_min (float): Minimum learning rate. Default: 0.
         last_epoch (int): The index of last epoch. Default: -1.
     .. _SGDR\: Stochastic Gradient Descent with Warm Restarts:
