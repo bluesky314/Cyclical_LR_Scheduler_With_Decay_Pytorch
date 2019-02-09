@@ -33,7 +33,7 @@ class CyclicCosAnnealingLR(_LRScheduler):
         https://arxiv.org/abs/1608.03983
     """
 
-    def __init__(self, optimizer,milestones,decay_milestones, eta_min=0, last_epoch=-1,gamma=0.5):
+    def __init__(self, optimizer,milestones,decay_milestones=None, eta_min=0, last_epoch=-1,gamma=0.5):
         if not list(milestones) == sorted(milestones):
             raise ValueError('Milestones should be a list of'
                              ' increasing integers. Got {}', milestones)
@@ -62,7 +62,12 @@ class CyclicCosAnnealingLR(_LRScheduler):
         curr_pos = self.last_epoch- left_barrier 
         
         
-     
-        return [self.eta_min + ( base_lr* self.gamma ** bisect_right(self.milestones2,self.last_epoch)- self.eta_min) *
+        if self.milestones2:
+            return [self.eta_min + ( base_lr* self.gamma ** bisect_right(self.milestones2,self.last_epoch)- self.eta_min) *
+                   (1 + math.cos(math.pi * curr_pos/ width)) / 2
+                    for base_lr in self.base_lrs]
+        else:
+            return [self.eta_min + (base_lr - self.eta_min) *
                (1 + math.cos(math.pi * curr_pos/ width)) / 2
                 for base_lr in self.base_lrs]
+
