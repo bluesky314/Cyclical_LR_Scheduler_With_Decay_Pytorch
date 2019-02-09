@@ -1,7 +1,8 @@
-# Cyclical_LR_Scheduler_With_Decay_Pytorch
+# Cyclical Learning Rate Scheduler With Decay in Pytorch
+
 Adapted from: https://github.com/Harshvardhan1/cyclic-learning-schedulers-pytorch
 
-
+Reach multiple minimas to create a powerful ensemble or just to find the best one using Cyclical Learning Rates with Decay. 
 " 
 
 # Cyclic learning rate schedulers -PyTorch
