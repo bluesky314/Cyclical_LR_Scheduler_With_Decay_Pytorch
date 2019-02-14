@@ -39,7 +39,7 @@ for epoch in range(100):
   train(..)
   validate(..)
 ```
->Note: scheduler.step() shown is called at every epoch. It can be called even in every batch. Remember to specify milestones in number of batches (and not number of epochs) in such as case. For only cyclical lr with no decay, do not pass a decay list. Once last cyclical milestone has been reached, the model will continue to train on eta_min which is by default 1e-6.
+>Note: scheduler.step() shown is called at every epoch. It can be called even in every batch. Remember to specify milestones in number of batches (and not number of epochs) in such as case. For only cyclical lr with no decay, do not pass a decay list. eta_min is the minimum lr it will go to and continue on that once cyclical shedule is over which is by default 1e-6.
 
 
 ### Visualization
