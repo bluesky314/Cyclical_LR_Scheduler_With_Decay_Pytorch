@@ -49,4 +49,4 @@ Cyclic Cosine Annealing Learning Rate Schedule
 
 Cyclic Linear Annealing Learning Rate Schedule
 
-<img src="https://github.com/bluesky314/Cyclical_LR_Scheduler_With_Decay_Pytorch/blob/master/linear.png" alt="Linear LR" width=220 height=311>
+<img src="https://github.com/bluesky314/Cyclical_LR_Scheduler_With_Decay_Pytorch/blob/master/linear.png" alt="Linear LR" width=620 height=311>
