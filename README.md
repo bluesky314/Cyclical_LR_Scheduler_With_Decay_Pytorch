@@ -33,7 +33,7 @@ import torch
 
 optimizer = torch.optim.SGD(model.parameters(),lr=1e-3)
 scheduler = CyclicCosAnnealingLR(optimizer,milestones=[10,25,60,80,120,180,240,320,400,480],decay_milestones=[60, 120, 240, 480, 960],eta_min=1e-6)
-for epoch in range(100):
+for epoch in range(500):
   scheduler.step()
   train(..)
   validate(..)
