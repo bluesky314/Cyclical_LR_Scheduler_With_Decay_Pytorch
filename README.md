@@ -2,7 +2,7 @@
 
 Adapted from: https://github.com/Harshvardhan1/cyclic-learning-schedulers-pytorch
 
-Reach multiple minimas to create a powerful ensemble or just to find the best one using Cyclical Learning Rates with Decay. 
+Reach multiple minimas to create a powerful ensemble or just to find the best one using Cyclical Learning Rates with Decay. Ideally decay milestones should intersect with cyclical milestones for smooth transition as shown below.
 
 
 
