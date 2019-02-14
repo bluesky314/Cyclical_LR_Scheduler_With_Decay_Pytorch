@@ -40,7 +40,6 @@ class CyclicCosAnnealingLR(_LRScheduler):
         self.eta_min = eta_min
         self.milestones=milestones
         self.milestones2=decay_milestones
-        print(self.milestones2)
         
         self.gamma = gamma
         super(CyclicCosAnnealingLR, self).__init__(optimizer, last_epoch)
