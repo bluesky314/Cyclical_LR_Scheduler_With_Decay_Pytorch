@@ -2,7 +2,7 @@
 
 Adapted from: https://github.com/Harshvardhan1/cyclic-learning-schedulers-pytorch
 
-Reach multiple minimas to create a powerful ensemble or just to find the best one using Cyclical Learning Rates with Decay. Ideally decay milestones should intersect with cyclical milestones for smooth transition as shown below. Can be used with any optimizer like Adam.
+Reach multiple minimas to create a powerful ensemble or just to find the best one using Cyclical Learning Rates with Decay. Ideally decay milestones should intersect with cyclical milestones for smooth transition as shown below. Can be used with any optimizer such as Adam.
 
 
 
@@ -47,4 +47,6 @@ Cyclic Cosine Annealing Learning Rate Schedule
 ![Cosine LR](https://github.com/bluesky314/Cyclical_LR_Scheduler_With_Decay_Pytorch/blob/master/cyc.png)
 
 
+Cyclic Linear Annealing Learning Rate Schedule
 
+![Linear LR](https://github.com/bluesky314/Cyclical_LR_Scheduler_With_Decay_Pytorch/blob/master/linear.png)
