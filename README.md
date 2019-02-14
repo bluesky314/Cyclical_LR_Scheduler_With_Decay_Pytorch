@@ -6,7 +6,6 @@ Reach multiple minimas to create a powerful ensemble or just to find the best on
 
 
 
-" 
 
 # Cyclic learning rate schedulers -PyTorch
 
