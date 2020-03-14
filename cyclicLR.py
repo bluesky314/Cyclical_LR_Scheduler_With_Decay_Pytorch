@@ -34,7 +34,7 @@ class CyclicCosAnnealingLR(_LRScheduler):
         https://arxiv.org/abs/1608.03983
     """
 
-    def __init__(self, optimizer,milestones,decay_milestones=None, gamma=0.5,eta_min=1e-6, last_epoch=-1:
+    def __init__(self, optimizer,milestones,decay_milestones=None, gamma=0.5,eta_min=1e-6, last_epoch=-1):
         if not list(milestones) == sorted(milestones):
             raise ValueError('Milestones should be a list of'
                              ' increasing integers. Got {}', milestones)
